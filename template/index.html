@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupie-Tracker</title>
+    <link rel="stylesheet" type="text/css" href="/layout/style.css?=time()">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Groupie Trackers page!</h1>
+    </header>
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="cont">
+        {{range .}}
+
+        <div class="box" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+                <div class="front" style="background-image: url({{.Image}})">
+
+                    <div class="front-info">
+                        <p><strong>{{.Name}}</strong></p>
+                        <p><strong>{{.CreationDate}}</strong></P>
+                    </div>
+
+                </div>
+                <div class="back">
+                    <p><strong>First Album:</strong> {{.FirstAlbum}}</p>
+                    <p class="card-info"><strong>Members:</strong> {{range $i, $member := .Members}}{{if $i}},
+                        {{end}}{{.}}{{end}}</p>
+                    {{range $location, $dates := .DatesLocations}}
+                    <p><strong>Location:</strong> {{$location}}</p>
+                    <p><strong>Date:</strong>
+                        {{range $i, $date := $dates}}
+                        {{if $i}}, {{end}}{{$date}}
+                        {{end}}
+                    </p>
+                    {{end}}
+                </div>
+            </div>
+        </div>
+        {{end}}
+    </div>
+    </div>
+</body>
+
+</html>
