@@ -18,9 +18,9 @@ The app presents this data through clean, interactive visualizations in a browse
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/groupie-tracker.git
-   cd groupie-tracker  ````
+   cd groupie-tracker  
 
-2. ***Run in Terminal ****:
+2. ***Run in Terminal***:
   ` go run main.go `
 
 3. ***Open your browser and go to***: 
