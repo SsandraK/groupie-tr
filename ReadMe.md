@@ -1,12 +1,29 @@
-## Groupie - tracker
-Groupie Trackers consists on receiving a given API and manipulate the data contained in it.
-This created website displays the bands info through several data visualizations.
+# 🎸 Groupie Tracker
 
-## Author
-Sandra Kannik
+Groupie Tracker is a Go web application that consumes and displays data from a given API containing information about music bands, members, concerts, and locations.  
+The app presents this data through clean, interactive visualizations in a browser-based interface.
 
-## Usage
-1.  Start by running `go run main.go` or `go run .` on your terminal
-2.  Open localhost 8080
-3.  To exit Ctrl+c in terminal
+
+## 🚀 Features
+
+- 📡 Fetches and parses data from a public API  
+- 🌍 Displays concert locations with band details  
+- 👥 Shows band members and formation years  
+
+
+---
+
+## ▶️ How to Run
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/groupie-tracker.git
+   cd groupie-tracker  ````
+
+2. ***Run in Terminal ****:
+  ` go run main.go `
+
+3. ***Open your browser and go to***: 
+    `http://localhost:8080 ` 
+
 

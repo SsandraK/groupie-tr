@@ -14,7 +14,7 @@ body {
     text-align: center;
 }
 
-/* background and effect */
+
 .bg {
     animation: slide 6s ease-in-out alternate;
     background-image: linear-gradient(-120deg, rgb(175, 184, 192) 50%, rgb(140, 196, 233) 50%);
@@ -48,11 +48,17 @@ body {
 }
 
 h1 {
-    font-family: monospace;
-    font-size: 2.5rem;
-    margin: 2rem 0;
-    padding: 25px;
-}
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(2rem, 5vw, 3rem); 
+    margin: 2rem 0 1rem;
+    padding: 1rem 1.5rem;
+    color: #1e293b; 
+    background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+    border-left: 5px solid #00bcd4;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
 
 
 .cont {
@@ -64,7 +70,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-/* evenly spaced and clickable elements */
+
 .box {
     width: calc(25% - 2rem);
     margin: 6rem;
@@ -74,7 +80,7 @@ h1 {
 
 }
 
-/* handle 3D effexts */
+
 .container {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -83,7 +89,7 @@ h1 {
 
 }
 
-/* Card fornt and back */
+
 .front,
 .back {
     background-size: cover;
@@ -107,7 +113,7 @@ h1 {
 
 }
 
-/*card back design */
+
 .back {
     background: #e7efd9;
     background: -webkit-linear-gradient(45deg, #e2ecd2 0%, #596a72 100%);
@@ -115,7 +121,7 @@ h1 {
     background: linear-gradient(45deg, #e7efd9 0%, #596a72 100%);
 }
 
-/*  visual layout and positioning for the element */
+
 .front-info {
     -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
     transform: translateY(-50%) translateZ(60px) scale(0.94);

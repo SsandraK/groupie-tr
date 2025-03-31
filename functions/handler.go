@@ -5,9 +5,8 @@ import (
 	"net/http"
 )
 
-// handle incoming HTTP requests and serve an HTML template
 func HomePage(w http.ResponseWriter, r *http.Request) {
-	//The CORS header to make requests to this server from any origin
+
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 
 	get_artists := GetArtists()

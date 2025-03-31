@@ -5,7 +5,6 @@ import (
 	"net/http"
 )
 
-// Handle different URL paths within the web application.
 func HandleError(w http.ResponseWriter, r *http.Request) {
 
 	switch r.URL.Path {
